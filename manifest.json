@@ -1,0 +1,13 @@
+{
+  "name": "Easy to see youtube subscriptions",
+  "version": "1.0",
+  "description": "Youtubeの登録者チャンネルを見やすくするやーつ",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/feed/subscriptions"],
+      "js": ["contents.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
